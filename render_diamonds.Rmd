@@ -1,0 +1,17 @@
+---
+title: "Diamonds"
+output: html_document
+date: "`r Sys.time()`"
+---
+
+
+# Diamonds
+
+```{r, echo=FALSE}
+library(ggplot2)
+
+# Plot the diamonds dataset in ggplot
+ggplot(diamonds, aes(x = carat, y = price, color = cut)) +
+  geom_point()
+
+```
